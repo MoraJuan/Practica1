@@ -32,21 +32,7 @@ class Email:
         self.__idcuenta= email[0]
         dominio=email[1].split('.')
         print(dominio)
-    def ContMail(self, archivo, idcuenta):
-        repetidos = {}
-        
-        with open(archivo, 'r') as f:
-            xmail = f.readline()
-            
-            while xmail:
-                xmail = xmail.strip()
-                if xmail == idcuenta:
-                    repetidos[xmail] =+ 1
-                else:
-                    repetidos[xmail] = 1
-                    
-                xmail = f.readline()
-        return repetidos
+   
            
                 
         
